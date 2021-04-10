@@ -1,0 +1,75 @@
+
+
+// SASS Mixin to take percentage and modify
+// Progress Bars width, color and text
+
+@mixin progressPercentage($progress){
+	div.progressBar div {
+		width: $progress;
+		background: rgb(100% - $progress, $progress, 50%);
+	}
+
+	div.progressBar div:after {
+		content: "#{round($progress)}"
+	}
+	
+}
+
+//Progress Bar Specific SASS
+.progressBar{
+	width: 100%;
+	height: 0.75em;
+	border: 0.125em solid darken(#3f3f3f,3);
+	background: darken(#3f3f3f,5);
+	overflow:hidden;
+	@include border-radius(25px);
+}
+
+.progressBar div {
+	display:block;
+	float: left;
+	height: 1em;
+}
+
+.progressBar div::after {
+	display: block;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #fff;
+	text-align:right;
+	padding: 0 0.75em;
+	font-size: 0.6rem;
+	line-height: 1.25;
+	font-weight:bold;
+}
+
+
+//SASS variables for each of the progress bars.
+
+.WEIGHT {
+
+	$previous-weight: 305;
+	$goal-weight: 185;
+	$current-weight: 200;
+	$weight-progress: (($previous-weight - $current-weight) / ($previous-weight - $goal-weight)) * 100%;
+
+	@include progressPercentage($weight-progress);
+}
+
+.SIXPACKABS {
+	$number-of-abs: 6;
+	$current-number-of-visible-abs: 0;
+	$six-pack-abs-progress: $current-number-of-visible-abs / $number-of-abs * 100%;
+	@include progressPercentage($six-pack-abs-progress);
+}
+
+.CSSLESSSASSCOMPASS {
+	$CSS-knowledge: 75%;
+	$LESS-knowledge: 50%;
+	$SASS-knowledge: 40%;
+	$COMPASS-knowledge: 40%;
+	$overall-CSS-LESS-SASS-COMPASS-progress: ($CSS-knowledge + $LESS-knowledge + $SASS-knowledge + $COMPASS-knowledge) / 4;
+	@include progressPercentage($overall-CSS-LESS-SASS-COMPASS-progress);
+	
+	
+}
+

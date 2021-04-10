@@ -1,14 +1,3 @@
-<!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
-  -
-  Github Repo: https://github.com/cobidev/simplefolio/
-  Readme: https://github.com/cobidev/simplefolio/README.md
-  -
-  For business & inquires, contact me -> jacobojavier98@gmail.com
--->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,13 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <!--stylesheets / link tags loaded here-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/sections/prog.css">
+    <style>
 
-    <!-- Put here your site title -->
-    <title>[Your name here] | Developer</title>
+              .rowm { margin-bottom:20px; }
+                    .progress{
+                      
+                      margin-top: 5px;
+                      right: 0;
+                  background: rgba(255,255,255,0.1);
+              justify-content: flex-start;
+              border-radius: 200px;
+              align-items: center;
+              position: relative;
+              display: flex;
+              height: 60px;
+              width: 140px;
+              font-size: medium;
+                }
+
+                .progress-value1 {
+              animation: load1 3s normal forwards;
+              box-shadow: 0 10px 40px -10px rgb(109, 92, 92);
+              border-radius: 200px;
+              background: rgb(26, 24, 24);
+              height: 40px;
+              width: 0;
+              }
+              .swipe{
+                  overflow:auto;
+                  white-space:nowrap;
+              }
+
+              @keyframes load1 {
+              0% { width: 0; }
+              100% { width: 80%; }
+              } 
+              .progress-value2 {
+              animation: load2 3s normal forwards;
+              box-shadow: 0 10px 40px -10px rgb(109, 92, 92);
+              border-radius: 200px;
+              background: rgb(26, 24, 24);
+              height: 40px;
+              width: 0;
+              }
+              @keyframes load2 {
+              0% { width: 0; }
+              100% { width: 80%; }
+              } 
+              .progress-value3 {
+              animation: load3 3s normal forwards;
+              box-shadow: 0 10px 40px -10px rgb(109, 92, 92);
+              border-radius: 200px;
+              background: rgb(26, 24, 24);
+              height: 40px;
+              width: 0;
+              }
+              @keyframes load3 {
+              0% { width: 0; }
+              100% { width: 70%; }
+              } 
+              .progress-value4 {
+              animation: load4 3s normal forwards;
+              box-shadow: 0 10px 40px -10px rgb(109, 92, 92);
+              border-radius: 200px;
+              background: rgb(26, 24, 24);
+              height: 40px;
+              width: 0;
+              }
+              @keyframes load4 {
+              0% { width: 0; }
+              100% { width: 75%; }
+              } 
+
+              .progress-value5 {
+              animation: load5 3s normal forwards;
+              box-shadow: 0 10px 40px -10px rgb(109, 92, 92);
+              border-radius: 200px;
+              background: rgb(26, 24, 24);
+              height: 40px;
+              width: 0;
+              }
+              @keyframes load5 {
+              0% { width: 0; }
+              100% { width: 90%; }
+              } 
+              .progress-value6 {
+              animation: load6 3s normal forwards;
+              box-shadow: 0 10px 40px -10px rgb(109, 92, 92);
+              border-radius: 200px;
+              background: rgb(26, 24, 24);
+              height: 40px;
+              width: 0;
+              }
+              @keyframes load6 {
+              0% { width: 0; }
+              100% { width: 95%; }
+              } 
+              .progress-value7 {
+              animation: load7 3s normal forwards;
+              box-shadow: 0 10px 40px -10px rgb(109, 92, 92);
+              border-radius: 200px;
+              background: rgb(26, 24, 24);
+              height: 40px;
+              width: 0;
+              }
+              @keyframes load7 {
+              0% { width: 0; }
+              100% { width: 70%; }
+              } 
+              .progress-value8 {
+              animation: load8 3s normal forwards;
+              box-shadow: 0 10px 40px -10px rgb(109, 92, 92);
+              border-radius: 200px;
+              background: rgb(26, 24, 24);
+              height: 40px;
+              width: 0;
+              }
+              @keyframes load8 {
+              0% { width: 0; }
+              100% { width: 60%; }
+              } 
+    </style>
+    <title>Shreya Shrivastava</title>
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
+    <meta name="keywords" content="Shreya Full-Stack Developer Software development " />
     <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+    <meta name="description" content="Shreya Shrivastava | Software Developer Graphic Designer Full-Stack Development Python Java Development Database " />
 
     <!-- Required librarys -->
     <link
@@ -33,6 +146,9 @@
     <script>
       ScrollReveal({ reset: false });
     </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Remove this script once you setup your custom portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -41,17 +157,37 @@
   <!-- Follow the HTML instructions to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+      <a class="navbar-brand" href="#top">  <h2 >  &nbsp;&nbsp; &nbsp; &nbsp;  Shreya Shrivastava  &nbsp; &nbsp; &nbsp;  </h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">      <a class="navbar-brand"  href="#about">  <h3 > About &nbsp; &nbsp;  </h2></a>
+      <a class="navbar-brand"  href="#Skills">  <h3 > Skills &nbsp; &nbsp;  </h2></a><span class="sr-only">(current)</span></a>
+      
+      <a class="navbar-brand"  href="#expereince">  <h3 > Experience &nbsp; &nbsp;  </h2></a><span class="sr-only">(current)</span></a>
+      <a class="navbar-brand"  href="#projects">  <h3 > Projects &nbsp; &nbsp;  </h2></a><span class="sr-only">(current)</span></a>
+      <a class="navbar-brand"  href="#contact">  <h3 > Contact &nbsp; &nbsp;  </h2></a><span class="sr-only">(current)</span></a>
+      
+      </div>
+    </div>
 
+      
+      
+    </nav>
     <!-- **** Hero Section **** -->
     <div id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title" class="load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+          Hi, my name is <span class="text-color-main">Shreya Shrivastava</span>
           <br />
-          I'm the Unknown Developer.
+          I'm a Full-Stack Developer.
         </h1>
         <p class="hero-cta" class="load-hidden">
-          <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
+          <a class="cta-btn cta-btn--hero" href="#contact">Here's some more about me!</a>
         </p>
       </div>
     </div>
@@ -75,15 +211,16 @@
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info">
-              <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you can!
+              <p class="about-wrapper__info-text" style="text-align: justify;">
+                I am Full-Stack Developer with a demonstrated history of working in the information technology and service industry.
+                 Skilled in PHP, HTML, Python, Data Analysis, Node.js, React.js, SQL and No-SQL, Express.js and various other frameworks and languages. I am a Bachelor of Technology undergraduate in Computer Science and Engineering at Vellore Institute of Technology, Chennai.
+                 I am interested to work with multiple android and web development platforms and data science technologies. 
               </p>
               <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
+              
               </p>
               <span class="d-flex mt-3">
-                <a target="_blank" class="cta-btn cta-btn--resume" href="">
+                <a target="_blank" class="cta-btn cta-btn--resume" href="./assets/resume.pdf">
                   View Resume
                 </a>
               </span>
@@ -93,6 +230,233 @@
       </div>
     </section>
     <!-- /END About Section -->
+    
+ <!-- **** Skills Section **** -->
+ <section id="Skills">
+  <div class="container">
+    <div class="project-wrapper">
+      <h2 class="section-title dark-blue-text">Skills</h2>
+      <div class="container-fluid d-flex flex-column " >
+      <div class="row">
+        <div class="col-md-6" >
+          <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-6" >
+              <p class="about-wrapper__info-text" style="text-align: left;">  Python </p>
+            </div>
+            <div class="col-sm-6" >
+              <div class="progress">
+                <div class="progress-value1"></div> &nbsp; 80%
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="col-md-6"  >
+          <div class="row" style="margin-top: 10px;" >
+            <div class="col-sm-6" >
+              <p class="about-wrapper__info-text" style="text-align: left;"> Full-Stack Development </p>
+            </div>
+            <div class="col-sm-6" >
+              <div class="progress">
+                <div class="progress-value2"></div> &nbsp; 80%
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-sm-6" >
+          <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-6">
+              <p class="about-wrapper__info-text" style="text-align: left;">  Database Management System </p>
+            </div>
+            <div class="col-sm-6" >
+              <div class="progress">
+                <div class="progress-value3"></div> &nbsp; 70%
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="col-md-6" >
+          <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-6">
+              <p class="about-wrapper__info-text" style="text-align: left;">  Data Structures and Algorithm  </p>
+            </div>
+            <div class="col-sm-6" >
+              <div class="progress">
+                <div class="progress-value4"></div> &nbsp; 75%
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-6" >
+          <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-6"  >
+              <p class="about-wrapper__info-text" style="text-align: left;">  Data Analytics </p>
+            </div>
+            <div class="col-sm-6" >
+              <div class="progress">
+                <div class="progress-value5"></div> &nbsp; 90%
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="col-md-6" >
+          <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-6">
+              <p class="about-wrapper__info-text" style="text-align: left;"> Front-End Development(React.JS) </p>
+            </div>
+            <div class="col-sm-6" >
+              <div class="progress">
+                <div class="progress-value6"></div> &nbsp; 95%
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-6">
+              <p class="about-wrapper__info-text" style="text-align: left;">  Java </p>
+            </div>
+            <div class="col-sm-6" >
+              <div class="progress">
+                <div class="progress-value7"></div> &nbsp; 70%
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row" style="margin-top: 10px;">
+            <div class="col-sm-6">
+              <p class="about-wrapper__info-text" style="text-align: left;"> Machine Learning </p>
+            </div>
+            <div class="col-sm-6" >
+              <div class="progress">
+                <div class="progress-value7"></div> &nbsp; 60%
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>  
+        
+
+  </div>
+</div> 
+        
+      </div>
+
+      
+      
+    </div>
+</section>
+<!-- /END Skills  Section -->
+
+
+      <!-- **** Experience Section **** -->
+      <section id="expereince">
+        <div class="container">
+          <div class="about-wrapper">
+            <h2 class="section-title ">Experience</h2>
+  
+            <!-- Each .row is a exp -->
+            <div class="row exp-wrapper">
+              <div class="col-lg-6" style="margin-bottom: 50px;">
+                <div class="project-wrapper__text" style="text-align: left;">
+                  <h2 class="project-wrapper__text-title">BYTE BLANKET SOFTWARE SOLUTIONS</h2>
+                  <h3 class="project-wrapper__text-title">Software Development and Testing Intern</h3>
+                    <h5 class="project-wrapper__text-title">May 2020-December 2020</h5>
+                  
+                  <div>
+                    <p  style="margin-top: 10px; text-align: justify;">
+                      Here, I independently developed a Native Android Application, 
+understood client requirements and worked with a 
+diverse team of experts from various fields to develop a commercial product. I worked with MongoDB, React.JS, Express.JS, Node.JS stack to deliver an efficient end product.
+                    </p>
+                  </div>
+                  <a target="_blank" class="cta-btn cta-btn--resume" style="margin-top: 8px;" href="https://www.byteblanket.com/">
+                    Know more about the company
+                  </a>
+                  
+                </div>
+              </div>
+              
+            
+              <div class="col-lg-6" >
+                <div class="project-wrapper__text" style="text-align: left;">
+                  <h2 class="project-wrapper__text-title">BHARAT SANCHAR NIGAM LIMITED</h2>
+                    <h3 class="project-wrapper__text-title">Vocation Trainee
+                      BSNL</h3>
+                      <h5 class="project-wrapper__text-title">March'2021-April'2021</h5>
+
+                  <div>
+                    <p class="mb-4" style="margin-top: 10px; text-align:justify ;">
+                      It was an amazing oppurtunity to learn intricracies of networking, wireless communication,
+                     Internet of Things, various forms of mobile technology and the architecture from the industry professionals.
+
+                    </p>
+                  </div>
+                  <a target="_blank" class="cta-btn cta-btn--resume" style="margin-top: 25px;" href="https://www.bsnl.co.in/">
+                    Know more about the company
+                  </a>
+                </div>
+              </div>
+              
+            </div>
+            <!-- /END Project -->
+            <div class="row exp-wrapper">
+              <div class="col-lg-6" style="margin-bottom: 50px;">
+                <div class="project-wrapper__text" style="text-align: left;">
+                  <h2 class="project-wrapper__text-title">NOOR-E-SYAAHI</h2>
+                  <h3 class="project-wrapper__text-title">Service Volunteer</h3>
+                    <h5 class="project-wrapper__text-title">May 2019-present</h5>
+                  
+                  <div>
+                    <p  style="margin-top: 10px; text-align: justify;">
+                      I worked with a team of inspiring and young social workers to provide quality education, promised benefits and an oppurtunity to receive equal education in under-priveldged government schools. 
+                    </p>
+                  </div>
+                  <a target="_blank" class="cta-btn cta-btn--resume" style="margin-top: 8px;" href="linkedin.com/in/noor-e-syahi-2288251b1">
+                    Know more about the NGO
+                  </a>
+                  
+                </div>
+              </div>
+              
+            
+              <div class="col-lg-6" >
+                <div class="project-wrapper__text" style="text-align: left;">
+                  <h2 class="project-wrapper__text-title">IIT-PALS, VIT CHENNAI</h2>
+                    <h3 class="project-wrapper__text-title"> President
+                      </h3>
+                      <h5 class="project-wrapper__text-title">August'2020-present</h5>
+
+                  <div>
+                    <p class="mb-4" style="margin-top: 8px; text-align:justify ;">
+                     Being the leader of a a reputed chapter, one that is overseen by respected and senior IIT Faculty members has been illuminating. And the responsibilites have made me understand various leadership and teamworking skills.
+                    </p>
+                  </div>
+                  <a target="_blank" class="cta-btn cta-btn--resume" href="https://palsvit.com/">
+                    Know more about the club
+                  </a>
+                </div>
+              </div>
+              
+            </div>
+  
+            
+          </div>
+        </div>
+      </section>
+      <!-- /END Experience  Section -->
+  
 
     <!-- **** Projects Section **** -->
     <section id="projects">
@@ -102,105 +466,71 @@
 
           <!-- Each .row is a project -->
           <div class="row">
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-md-6 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
+                <h3 class="project-wrapper__text-title">REACMCHAIN</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    Reacmchain is a React and Blockchain platform to manage and improve the supply chains of a company, aimed at revamping the supply chain management by incorporating the entire network of suppliers, manufacturers, dealers and consumers on a single unified blockchain.
                   </p>
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
-                  See Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
+                <a target="_blank" class="cta-btn cta-btn--hero" style="margin-top: 17px;" href="https://github.com/shreyeah/reacmchain">
                   Source Code
                 </a>
+                
               </div>
             </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
-                  </div>
+            
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">DATA COMPRESSION ALGORITHM</h3>
+                <div>
+                  <p class="mb-4">
+                    In this research work, we present a hybrid approach to compress text data. This hybrid approach encompasses various methodologies like Run Length Encoding (RLE), Infix Encoding and Bit reduction techniques. We aim to overlay different techniques to achieve the best possible compression ratio for large text files and dictionary data.
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://ieeexplore.ieee.org/abstract/document/9077887">
+                  IEEE Xplore Publication
                 </a>
               </div>
             </div>
+            
           </div>
           <!-- /END Project -->
-
-          <!-- Each .row is a project -->
           <div class="row">
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-md-6 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                <h3 class="project-wrapper__text-title">PHYSIOCS</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                   Online help in the field of physiotherapy, allowing patients to attend their sessions easily from the comfort and safety of their homes and the therapists to ensure the procedure is carried out in the right way using Computer Vision and Artificial Intelligence.
                   </p>
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
-                  See Live
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://github.com/shreyeah/physiocs">
+                  Source Code
                 </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
+                
+              </div>
+            </div>
+            
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">BUSSTAT</h3>
+                <div>
+                  <p class="mb-4">
+                    Making local bus commute efficient and simple by digitizing the payment and providing users with live location, ETA, traffic insights, seat availability and much more.
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" style="margin-top: 20px;" href="https://github.com/shreyeah/BusStat">
                   Source Code
                 </a>
               </div>
             </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
-                  </div>
-                </a>
-              </div>
-            </div>
+            
           </div>
-          <!-- /END Project -->
+ 
 
-          <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
-                <div>
-                  <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
-                  </p>
-                </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
-                  See Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
+          
         </div>
       </div>
     </section>
@@ -211,12 +541,13 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
+          <p class="contact-wrapper__text">+91 9425328600</p>
+          <p class="contact-wrapper__text">shreya28600@gmail.com</p>
           <a
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
+            href="mailto:shreya28600@email.com"
+            >Mail me!</a
           >
         </div>
       </div>
@@ -230,51 +561,42 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a href="#!" target="_blank">
-            <i class="fa fa-codepen fa-inverse"></i>
-          </a>
-          <a href="#!" target="_blank">
+          
+          
+          <a href="https://www.linkedin.com/in/shreya-shrivastava28600/" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a href="#!" target="_blank">
+          <a href="https://github.com/shreyeah" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
+          </a>
+          <a href="https://www.hackerrank.com/shreya28600" target="_blank">
+            <img
+                
+                height="38px"
+                width="38px"
+                src="./assets/hc.png"
+                alt="hackerrank"
+                style="background:transparent;"
+              />
+          </a>
+          <a href="https://leetcode.com/shreyeah/" target="_blank">
+            <img
+                
+                height="30px"
+                width="30px"
+                src="./assets/leetcode.png"
+                alt="Leetcode"
+                style="background:transparent;"
+              />
           </a>
         </div>
 
         <hr />
+       
 
-        <!-- If you give me some credit, will be huge for me :) -->
-        <p class="footer__text">
-          © 2020 - Template developed by
-          <a href="https://github.com/cobidev" target="_blank"
-            >Jacobo Martínez</a
-          >
-        </p>
+       
 
-        <!-- Remove this paragraph once you setup your custom portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            class="github-button"
-            href="https://github.com/cobidev/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            class="github-button"
-            href="https://github.com/cobidev/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobidev/simplefolio on GitHub"
-            >Star</a
-          >
-        </p>
+        
       </div>
     </footer>
     <!-- /END Footer Section -->
